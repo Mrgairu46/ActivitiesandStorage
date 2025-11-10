@@ -1,3 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Activities and Storage</string>
+    <string name="app_name">activitiesandstorage</string>
+
+    <!-- Main Menu -->
+    <string name="add_note">Add Note</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="view_note">View Note</string>
+    <string name="select_storage">Select Storage</string>
+
+    <!-- Add Note -->
+    <string name="note_title">Note Title</string>
+    <string name="note_content">Note Content</string>
+    <string name="save_note">Save</string>
+
+    <!-- Delete Note -->
+    <string name="delete_note_message">Tap a note to delete it</string>
+
+    <!-- View Note -->
+    <string name="note_title_placeholder">Note Title</string>
+    <string name="note_content_placeholder">Note Content</string>
+
+    <!-- Toasts -->
+    <string name="empty_warning">Field cannot be empty!</string>
+    <string name="note_saved">Note saved successfully</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="no_notes">No notes available</string>
+
+    <!-- Storage -->
+    <string name="storage_shared_prefs">Shared Preferences</string>
+    <string name="storage_file">File Storage</string>
+    <string name="storage_switched">Switched to %1$s</string>
 </resources>

@@ -10,16 +10,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ActivitiesAndStorage">
+        tools:targetApi="31">
+
+        <!-- Main screen showing notes -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Add Note screen -->
+        <activity
+            android:name=".AddNoteActivity"
+            android:exported="false" />
+
+        <!-- Delete Note screen -->
+        <activity
+            android:name=".DeleteNoteActivity"
+            android:exported="false" />
+
+        <!-- View Note screen (new) -->
+        <activity
+            android:name=".ViewNoteActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
