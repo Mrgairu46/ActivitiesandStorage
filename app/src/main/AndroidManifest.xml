@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.activitiesandstorage">
 
     <application
         android:allowBackup="true"
@@ -10,11 +11,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:theme="@style/Theme.Activitiesandstorage">
 
-        <!-- Main screen showing notes -->
+        <!-- Main launcher activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.activitiesandstorage.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,17 +26,17 @@
 
         <!-- Add Note screen -->
         <activity
-            android:name=".AddNoteActivity"
+            android:name="com.example.activitiesandstorage.AddNoteActivity"
             android:exported="false" />
 
         <!-- Delete Note screen -->
         <activity
-            android:name=".DeleteNoteActivity"
+            android:name="com.example.activitiesandstorage.DeleteNoteActivity"
             android:exported="false" />
 
-        <!-- View Note screen (new) -->
+        <!-- View Note screen -->
         <activity
-            android:name=".ViewNoteActivity"
+            android:name="com.example.activitiesandstorage.ViewNoteActivity"
             android:exported="false" />
 
     </application>
